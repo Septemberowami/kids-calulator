@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kids Calculator with Abacus</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>Kids Friendly Calculator</header>
+
+    <div class="calculator">
+      <input
+        id="first-number"
+        type="number"
+        placeholder="First Number"
+        min="0"
+        max="99"
+      />
+      <div class="operator-buttons">
+        <button class="operator" id="plus">+</button>
+        <button class="operator" id="minus">-</button>
+        <button class="operator" id="multiply">x</button>
+        <button class="operator" id="divide">/</button>
+      </div>
+      <input
+        id="second-number"
+        type="number"
+        placeholder="Second Number"
+        min="0"
+        max="99"
+      />
+      <button id="calculate-btn">Calculate</button>
+      <button id="clear-btn">Clear</button>
+      
+      <input id="answer" type="text" placeholder="Answer" disabled />
+      <div id="error-message" style="color: red; display: none">
+        Oops! Please select an operator.
+      </div>
+    </div>
+
+    <div class="color-picker">
+      <label for="color">Change Calculator Colour</label>
+      <input type="color" id="color" name="color" />
+    </div>
+
+    
+    <div class="abacus-section">
+      <h3>Abacus</h3>
+      <div class="abacus" id="abacus"></div>
+    </div>
+
+    <footer>Created by September Aesthetics</footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
