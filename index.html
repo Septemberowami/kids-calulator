@@ -4,53 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kids Calculator with Abacus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Bungee&family=Bubblegum+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <header>Kids Friendly Calculator</header>
+    <header>🎈 Kids Friendly Calculator 🎈</header>
 
     <div class="calculator">
-      <input
-        id="first-number"
-        type="number"
-        placeholder="First Number"
-        min="0"
-        max="99"
-      />
-      <div class="operator-buttons">
-        <button class="operator" id="plus">+</button>
-        <button class="operator" id="minus">-</button>
-        <button class="operator" id="multiply">x</button>
-        <button class="operator" id="divide">/</button>
+      <div class="input-section">
+        <input
+          id="first-number"
+          type="number"
+          placeholder="First Number"
+          min="0"
+          max="99"
+        />
+
+        <div class="operator-buttons">
+          <button class="operator" id="plus">➕</button>
+          <button class="operator" id="minus">➖</button>
+          <button class="operator" id="multiply">✖️</button>
+          <button class="operator" id="divide">➗</button>
+        </div>
+
+        <input
+          id="second-number"
+          type="number"
+          placeholder="Second Number"
+          min="0"
+          max="99"
+        />
       </div>
-      <input
-        id="second-number"
-        type="number"
-        placeholder="Second Number"
-        min="0"
-        max="99"
-      />
-      <button id="calculate-btn">Calculate</button>
-      <button id="clear-btn">Clear</button>
-      
-      <input id="answer" type="text" placeholder="Answer" disabled />
-      <div id="error-message" style="color: red; display: none">
-        Oops! Please select an operator.
+
+      <div class="action-buttons">
+        <button id="calculate-btn">🧮 Calculate!</button>
+        <button id="clear-btn">🧹 Clear All</button>
+      </div>
+
+      <div class="result-section">
+        <input
+          id="answer"
+          type="text"
+          placeholder="✨ Answer appears here! ✨"
+          readonly
+        />
+        <div id="error-message">
+          🤔 Oops! Please pick an operation (+, -, ×, ÷)
+        </div>
       </div>
     </div>
 
     <div class="color-picker">
-      <label for="color">Change Calculator Colour</label>
-      <input type="color" id="color" name="color" />
+      <label for="color">🎨 Change Background Color</label>
+      <input type="color" id="color" name="color" value="#FFB6C1" />
     </div>
 
-    
     <div class="abacus-section">
-      <h3>Abacus</h3>
-      <div class="abacus" id="abacus"></div>
+      <h3>🔢 Magic Counting Beads 🔢</h3>
+      <div class="abacus-container">
+        <div class="abacus" id="abacus"></div>
+        <div class="abacus-legend">
+          <span>Each bead = 1 • Watch them move! 🎯</span>
+        </div>
+      </div>
     </div>
-
-    <footer>Created by September Aesthetics</footer>
 
     <script src="main.js"></script>
   </body>
