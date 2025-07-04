@@ -7,13 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Bungee&family=Bubblegum+Sans:wght@400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Bungee&family=Bubblegum+Sans&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <header>🎈 Kids Friendly Calculator 🎈</header>
+    <header>Kids Friendly Calculator</header>
 
     <div class="calculator">
       <div class="input-section">
@@ -26,10 +26,10 @@
         />
 
         <div class="operator-buttons">
-          <button class="operator" id="plus">➕</button>
-          <button class="operator" id="minus">➖</button>
-          <button class="operator" id="multiply">✖️</button>
-          <button class="operator" id="divide">➗</button>
+          <button class="operator" id="plus">+</button>
+          <button class="operator" id="minus">-</button>
+          <button class="operator" id="multiply">x</button>
+          <button class="operator" id="divide">÷</button>
         </div>
 
         <input
@@ -42,34 +42,34 @@
       </div>
 
       <div class="action-buttons">
-        <button id="calculate-btn">🧮 Calculate!</button>
-        <button id="clear-btn">🧹 Clear All</button>
+        <button id="calculate-btn">Calculate!</button>
+        <button id="clear-btn">Clear All</button>
       </div>
 
       <div class="result-section">
         <input
           id="answer"
           type="text"
-          placeholder="✨ Answer appears here! ✨"
+          placeholder="Answer appears here!"
           readonly
         />
         <div id="error-message">
-          🤔 Oops! Please pick an operation (+, -, ×, ÷)
+          Oops! Please pick an operation (+, -, ×, ÷)
         </div>
       </div>
     </div>
 
     <div class="color-picker">
-      <label for="color">🎨 Change Background Color</label>
+      <label for="color">Change Background Color</label>
       <input type="color" id="color" name="color" value="#FFB6C1" />
     </div>
 
     <div class="abacus-section">
-      <h3>🔢 Magic Counting Beads 🔢</h3>
+      <h3 class="abacus-title">Abacus</h3>
       <div class="abacus-container">
         <div class="abacus" id="abacus"></div>
         <div class="abacus-legend">
-          <span>Each bead = 1 • Watch them move! 🎯</span>
+          <span>Each bead = 1 • Watch them move!</span>
         </div>
       </div>
     </div>
